@@ -1,0 +1,229 @@
+@charset "utf-8";
+
+
+/* Conteneur video et texte */
+.content-container {
+  display: flex;
+  justify-content: space-around; 
+  align-items: center; 
+  padding: 20px;
+  gap: 20px; 
+  flex-wrap: wrap; 
+}
+
+/* Video style */
+.video-container video {
+  width: 100%; 
+  max-width: 500px; 
+  border: 5px solid black; 
+  border-radius: 10px; 
+}
+
+/* Style texte*/
+.text-container {
+  max-width: 500px; 
+  text-align: left; 
+  
+}
+
+.text-container h2 {
+  font-size: 1.8em;
+  color: #ff4500;
+  margin-bottom: 10px;
+  font-family: 'Papyrus', cursive;
+}
+
+.text-container p {
+  font-size: 1.1em;
+  line-height: 1.6; 
+  margin-bottom: 10px;
+}
+
+.text-container2 p  {
+  padding: 30px;
+  font-size: 1.1em;
+  line-height: 1.5;
+
+}
+
+#text1 {
+  font-size: 1.1em;
+  line-height: 1.6; 
+  padding: 30px;
+  
+
+}
+/*content container 2*/
+.content-container2 {
+  display: flex; 
+  justify-content: space-around; 
+  align-items: center; 
+  padding: 30px;
+  gap: 20px; 
+  flex-wrap: wrap; 
+}
+
+/* Video Style */
+.content-container2 img {
+  height: auto;
+  width: 50%; 
+  max-width: 500px; 
+  border: 5px solid black; 
+  border-radius: 10px; 
+}
+
+/*texte style*/
+.text-container2 {
+  max-width: 500px; 
+  text-align: center; 
+  
+}
+
+.text-container2 h2 {
+  font-size: 1.8em;
+  color: #ff4500;
+  margin-bottom: 10px;
+  font-family: 'Papyrus', cursive;
+}
+
+.text-container p {
+  padding: 30px;
+  font-size: 1.1em;
+  line-height: 1.5;
+}
+
+
+
+
+
+
+
+
+/* Partie video + shadow + bouton PLAY */
+
+.video-container {
+  position: relative;
+  text-align: center;
+}
+
+.video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /*ombre*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  transition: opacity 0.3s ease;
+}
+
+.video-overlay.hidden {
+  opacity: 0;               
+  pointer-events: none;     
+}
+
+
+.play-button {
+  padding: 10px 20px;
+  font-size: 18px;
+  color: #fff;
+  background-color: rgba(255, 102, 0, 0.8);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s;
+  position: absolute; 
+  transform-origin: center; 
+}
+
+.play-button:hover {
+  transform: scale(1.1);
+}
+
+.play-button:active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+/* PArtie video + shadow+ bouton PLAY*/
+
+
+/*Partie cards*/
+
+.book{
+  display : flex;
+	flex-direction: row-reverse;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	row-gap: 10px; 
+	padding : 10px 0; 
+	margin : 1rem 6rem;
+	border : 2px solid black;
+	background-color : #ddd;
+	border-radius: 4px;
+}
+
+.card {
+  background-color: #2b2b2b;
+  width: 300px;
+  margin: 20px auto;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card-image img {
+  width: 100%;
+  height: auto;
+}
+
+.card-content {
+  padding: 15px;
+  text-align: center;
+}
+
+.card-header h2 {
+  margin: 10px 0 5px;
+  font-size: 1.5em;
+  color: #ff4500;
+}
+
+.card-header p {
+  margin: 0;
+  font-size: 1em;
+  color: #aaa;
+}
+
+.card-details p {
+  margin: 10px 0;
+  font-size: 0.9em;
+  color: #ccc;
+}
+
+.card-rating p {
+  margin: 5px 0;
+}
+
+.card-button {
+  background-color: #ff4500;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.card-button:hover {
+  background-color: #e03e00;
+}
+
+

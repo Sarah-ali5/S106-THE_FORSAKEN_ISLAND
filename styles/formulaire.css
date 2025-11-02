@@ -1,0 +1,122 @@
+@charset "utf-8";
+
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+    
+    background-color: black;
+    padding: 0;
+    margin: 0;
+  }
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+    line-height: 1.6;
+}
+
+
+
+/*conteneur de reservation */
+
+.reservation-container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: black;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/*placemet de l'image et des titres */
+.head {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    color: #ff4500;
+    font-size: 200% ;
+}
+
+.affiche {
+    width: 40%;
+    height: auto;
+    margin-right: 15px;
+    
+}
+
+
+
+
+/*Formulaire */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input, .form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.form-group.prix p {
+ /*prix */
+ color: #ae511c;
+}
+
+/*boutons formulaire*/
+.form-buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.form-buttons input[type="submit"],
+.form-buttons input[type="reset"] {
+    background-color: #000; /*fond noir */
+    color: #ff4500; 
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+.contact {
+    max-width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 200%;
+    
+}
+#titleContact {
+    color:#ff4500;
+    font-family: 'Papyrus', cursive;
+}
+
+.contact p {
+    margin-bottom: 20px;
+    font-size: 1rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+.contactInfos {
+    margin-bottom: 20px;
+}
+
+
+iframe{
+ max-width: 100%; 
+  width: 55%; 
+  height: 300px; 
+  margin: 50px;
+}
