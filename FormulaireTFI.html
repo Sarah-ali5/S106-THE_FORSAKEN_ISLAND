@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+ 
+    <link rel="icon" type="image/png" href="./images/iconSite.png">
+    <title>The Forsaken Island - Réservation</title>
+    <link rel="stylesheet" href="./styles/formulaire.css">
+    <link rel="stylesheet" href="./styles/formulaireBase.css">
+</head>
+
+
+
+<body>
+        <header>
+            <div class="header">
+                <img class="LogoSite" src="./images/logosite2-.png" alt="logo">
+                <h1 class="title">THE FORSAKEN ISLAND</h1>
+            </div>
+            <h2 id="slogan" >Oserez-vous affronter l’ile de la terreur?</h2>
+        </header>
+
+<!-- Navigation -->
+
+    <nav>
+        <a href="THEFORSAKENISLAND.html" class="nav-item">Accueil</a>
+        <a href="ActivitesTFI.html" class="nav-item">Activités</a>
+        <a href="FormulaireTFI.html" class="nav-item is-active">Contact</a>
+    </nav>
+
+
+<!-- Conteneur de Réservation -->
+<div class="reservation-container">
+    <div class="head">
+        <img class="affiche" src="./images/logosite2-.png" alt="image logo">
+            <p>Réservation</p>
+        
+    </div>
+
+    <!-- Formulaire de Réservation -->
+
+    <form action="/my-handling-form-page" method="post">
+       
+        <!-- Date de réservation -->
+        <div class="form-group">
+            <label for="date">Date de réservation :</label>
+            <input type="date" id="date" name="date" required>
+        </div>
+
+        <!-- Choix de l'activité -->
+        <div class="form-group">
+            <label for="activite">Activité :</label>
+            <select id="activite" name="activite" required>
+                <option value="">Sélectionnez une activité</option>
+                <option value="Nom d'activite">Activité 1 : Les Mystères Oubliés</option>
+                <option value="Nom d'activite">Activité 2 : Les Couloirs de l'Effroi </option>
+                <option value="Nom d'activite">Activité 3 : Le Sommet Interdit</option>
+            </select>
+        </div>
+
+        <!-- Choix du nombre de joueurs -->
+        <div class="form-group">
+            <label for="nombre_de_joueur">Nombre de joueurs :</label>
+            <select id="nombre_de_joueur" name="nombre_de_joueur" required>
+                <option value="">Sélectionnez le nombre de joueurs</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+            </select>
+        </div>
+
+        <!-- Prix -->
+        <div class="form-group prix">
+            <p>Total : <span>30,00 €</span></p>
+        </div>
+
+        <!-- Nom -->
+        <div class="form-group">
+            <label for="nom">Nom :</label>
+            <input type="text" id="nom" name="u_nom" required placeholder="Entrez votre Nom">
+        </div>
+
+        <!-- Prénom -->
+        <div class="form-group">
+            <label for="prenom">Prénom :</label>
+            <input type="text" id="prenom" name="u_prenom" placeholder="Entrez votre prénom">
+        </div>
+
+        <!-- Email -->
+        <div class="form-group">
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="u_email" placeholder="monemail@mail.com...">
+        </div>
+
+        <!-- Téléphone -->
+        <div class="form-group">
+            <label for="telephone">Téléphone :</label>
+            <input type="tel" id="telephone" name="u_telephone" pattern="[0-9]{10}" required placeholder="0123456789">
+        </div>
+
+        <!-- Boutons du formulaire -->
+        <div class="form-buttons">
+            <input type="submit" value="Envoyer">
+            <input type="reset" value="Annuler">
+        </div>
+    </form>
+</div>
+<!-- FIN Formulaire de Réservation -->
+
+
+<!--MAPS et contacts-->
+
+
+<div class="contact">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7075.473627506452!2d-4.883923027221626!3d48.31491728888161!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2sfr!4v1732634496934!5m2!1sfr!2sfr" width="600" height="450" style="border:10px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+   
+    <div class="contactInfos">
+        <p id="titleContact">THE FORSAKEN ISLAND </p>
+    <p>Addresse: 39 Cor de Sainte-Barbe 29217 - Le Conquet,  France</br>
+        Email: contact@theforsakenisland.com</br>
+        Telephone: 06 13 12 55 77</br></p>
+    </div>
+</div>
+
+
+<!--FOOTER-->
+<footer>
+        
+    <p>Sarah ALI et Monica NEIVA CORREIA</p> 
+    <img src="./images/LogoIUT.jpg" alt="logo iut">
+    <p id="rights">2024 The Forsaken Island. Tous droits réservés.</p>
+    <a href="R/Rapports/rapportS104.docx">Rapport(texte)</a>
+    <a href="R/Rapports/rapportS104.pdf">- Rapport(PDF)</a>
+</footer>
+
+</body>
+</html>
